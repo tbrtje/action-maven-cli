@@ -8,7 +8,7 @@ then
   sh -c 'mvn $*'
 
 else
-  sh -c 'echo $GS_CONFIG > /settings.xml'
+  sh -c 'echo $GS_CONFIG | tee /settings.xml'
   sh -c 'mvn $ -gs /settings.xml*'
 fi"
 
