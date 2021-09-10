@@ -5,6 +5,7 @@ inputs:
     description: 'Arguments to pass to Maven'
     required: true
     default: 'World'
+  GS_CONFIG:
 runs:
   using: 'docker'
   image: 'Dockerfile'
