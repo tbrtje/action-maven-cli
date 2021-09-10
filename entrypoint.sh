@@ -3,7 +3,7 @@
 set -e
 
 echo "==========Starting Maven Commands=========="
-bash -c "if [-z "$OWNER"]
+bash -c "if [-z $OWNER]
 then
   sh -c 'mvn $*'
 
