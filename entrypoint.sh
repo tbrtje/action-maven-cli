@@ -3,13 +3,14 @@
 set -e
 
 echo "==========Starting Maven Commands=========="
-if [-z "$GS_CONFIG"]
+bash -c "if [-z "$GS_CONFIG"]
 then
   sh -c "mvn $*"
 
 else
   sh -c "echo $GS_CONFIG > /settings.xml"
   sh -c "mvn $ -gs /settings.xml*"
-fi
+fi"
+
 
 echo "==========Finished Maven Commands=========="
