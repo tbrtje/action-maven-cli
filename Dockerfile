@@ -9,7 +9,7 @@ LABEL "com.github.actions.description"="Wraps the Maven CLI to enable Maven comm
 LABEL "com.github.actions.icon"="package"
 LABEL "com.github.actions.color"="orange"
 COPY LICENSE README.md /
-
+COPY settings.xml /settings.xml
 COPY entrypoint.sh /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
