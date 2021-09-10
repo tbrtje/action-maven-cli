@@ -1,4 +1,4 @@
-FROM 3-adoptopenjdk-16
+FROM maven:3-adoptopenjdk-16
 
 LABEL "name"="Maven CLI Action"
 LABEL "maintainer"="Thies Johann Brötje <kontakt+dev@thiesbroetje.de>"
